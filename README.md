@@ -64,7 +64,7 @@ The website is fully responsive and built using modern frontend technologies.
 
 ---
 
-## 🎥 Screenshots & Video Demo
+## 🎥 Screenshots
 
 ### 💻 Website Preview
 
