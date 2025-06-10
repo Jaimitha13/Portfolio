@@ -10,17 +10,35 @@ body {
     /* Dark Blue-Gray */
     padding: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #000000;
 }
+
+.navbar-toggler {
+    background-color: #ff0000;
+    /* Your desired background color */
+    padding: 0.25rem 0.5rem;
+    /* Adjust padding as needed */
+    border-radius: 0.25rem;
+    /* Optional: rounded corners */
+
+    color: #000000;
+}
+
 
 .nav-link {
     color: #000000;
     font-size: x-large;
+    font-weight: bold;
+
+
+    margin-left: 70px;
 }
 
 .navbar-brand {
-    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
     font-style: italic;
-    color: whitesmoke;
+    margin-left: 40px;
 }
 
 /* Mobile Navbar */
