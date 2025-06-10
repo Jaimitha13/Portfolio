@@ -41,7 +41,7 @@ This portfolio reflects my journey as a **Python Full Stack Developer**. It incl
 
 | Home Page                          | About Me Section                    |
 |-----------------------------------|-------------------------------------|
-| ![Home](screenshots/home.png)     | ![About](screenshots/about.png)     |
+| ![Home](https://github.com/Jaimitha13/Portfolio/blob/42eeaa912514d51e12ef6ae63bb95898f2c6a821/Screenshot%202025-06-10%20221144.png)     | ![About](screenshots/about.png)     |
 
 
 ## 📁 How to Run Locally
