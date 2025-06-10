@@ -3,24 +3,10 @@ body {
     background-color: black;
 }
 
-
-
-.navbar {
-    background-color: #1a1a2e;
-    /* Dark Blue-Gray */
-    padding: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    color: #000000;
-}
-
-
-
 .nav-link {
     color: #000000;
     font-size: x-large;
     font-weight: bold;
-
-
     margin-left: 70px;
 }
 
@@ -31,17 +17,15 @@ body {
     margin-left: 40px;
 }
 
-
-
 .navbar-toggler-icon {
     background-color: #040303;
-    /* White */
+
 }
 
 .nav-link:hover {
-    background-color: white;
+
     text-align: center;
-    text-decoration: underline;
+    text-decoration: underline white 10px;
     border-radius: 20px;
 }
 
@@ -113,8 +97,6 @@ p {
     object-fit: cover;
 }
 
-
-
 #skills {
     color: whitesmoke;
     text-decoration: none !important;
@@ -166,7 +148,7 @@ p {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(66, 14, 14, 0.1);
 }
 
 .card-title {
@@ -176,11 +158,11 @@ p {
 
 .card-text {
     font-size: 0.95rem;
-    color: #444;
+    color: #000000;
 }
 
 .card-body {
-    padding: 20px;
+    padding: 15px;
 }
 
 
@@ -188,10 +170,6 @@ p {
     background-color: #0845c6;
     height: 500px;
 }
-
-
-
-
 
 /* Section Heading */
 section h2 {
@@ -209,9 +187,6 @@ section h2 {
     transition: all 0.3s;
 }
 
-
-
-
 .card {
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -227,25 +202,10 @@ section h2 {
     object-fit: cover;
 }
 
-.btn {
-    margin-right: 10px;
-}
-
-.tech-used {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-#projects {
-    text-align: center;
-}
-
-
-
 #contact h2.display-2 {
     text-decoration: none !important;
     border-bottom: none !important;
-    /* Removes any bottom border */
+
     color: rgb(255, 252, 252);
     text-align: center;
 
