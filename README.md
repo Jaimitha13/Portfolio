@@ -43,11 +43,6 @@ This portfolio reflects my journey as a **Python Full Stack Developer**. It incl
 |-----------------------------------|-------------------------------------|
 | ![Home](screenshots/home.png)     | ![About](screenshots/about.png)     |
 
-### ▶️ Video Demo
-
-📽️ [Watch Demo on YouTube](https://github.com/Jaimitha13/Portfolio/blob/1ccf261692f813a7327e90fe52fe7e80c343cce1/Screen%20Recording%202025-06-10%20220741.mp4)
-
----
 
 ## 📁 How to Run Locally
 
