@@ -32,8 +32,7 @@ This portfolio reflects my journey as a **Python Full Stack Developer**. It incl
 
 ## 🌍 Live Demo
 
-👉 [Click here to view the live portfolio](https://your-portfolio-live-link.com)
-
+[![Live Demo](https://img.shields.io/badge/🚀_View_Live_Portfolio-FF5722?style=for-the-badge)](https://your-portfolio-url.com)  
 ---
 
 ## 🎥 Screenshots & Video Demo
