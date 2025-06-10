@@ -1,8 +1,20 @@
-/* Navbar Styling */
+/* Base Styles */
 body {
     background-color: black;
+    display: flow-root;
+    overflow-x: hidden;
+    position: relative;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+/* Navbar Styling */
 .nav-link {
     color: #000000;
     font-size: x-large;
@@ -19,11 +31,9 @@ body {
 
 .navbar-toggler-icon {
     background-color: #040303;
-
 }
 
 .nav-link:hover {
-
     text-align: center;
     text-decoration: underline white 10px;
     border-radius: 20px;
@@ -35,6 +45,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* Button Styles */
 .btn {
     background-color: #ff6600;
     width: 230px;
@@ -49,6 +60,7 @@ body {
     color: #1a1a2e;
 }
 
+/* Animation */
 .fade-in {
     animation: fadeInUp 1s ease-in-out both;
 }
@@ -65,7 +77,18 @@ body {
     }
 }
 
+/* Home Section */
+#home {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+/* About Section */
 .profile-img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -79,10 +102,12 @@ p {
     line-height: 1.9;
 }
 
+/* Education Section */
 .edu-card {
     border-radius: 16px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #fff;
+    margin-bottom: 1rem;
 }
 
 .edu-card:hover {
@@ -90,13 +115,7 @@ p {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.edu-card img {
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    height: 180px;
-    object-fit: cover;
-}
-
+/* Skills Section */
 #skills {
     color: whitesmoke;
     text-decoration: none !important;
@@ -107,29 +126,20 @@ p {
     text-decoration: none !important;
     text-align: center;
     border-bottom: none !important;
-    /* Removes any bottom border */
 }
 
 .skill-card {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 25px;
-    /* Space between cards */
     background-color: #f8f9fa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.skill-label img {
-    width: 28px;
-    height: 28px;
-    margin-right: 10px;
 }
 
 .progress {
     height: 28px;
     border-radius: 8px;
     margin-top: 12px;
-    /* Space between label and progress bar */
 }
 
 .progress-bar {
@@ -138,102 +148,131 @@ p {
     font-size: 14px;
 }
 
-/* Certificate Section Styling */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    background-color: #ffffff;
+/* Project Section */
+.project-img {
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(66, 14, 14, 0.1);
-}
-
-.card-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.6rem;
-}
-
-.card-text {
-    font-size: 0.95rem;
-    color: #000000;
-}
-
-.card-body {
-    padding: 15px;
-}
-
-
-#certificate {
-    background-color: #0845c6;
-    height: 500px;
-}
-
-/* Section Heading */
-section h2 {
-    font-size: 2.2rem;
-    color: #1e3a8a;
-    font-weight: bold;
-    border-bottom: 3px solid #0d6efd;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-/* Button (optional for download links) */
-.btn-outline-primary {
-    border-radius: 30px;
-    transition: all 0.3s;
-}
-
-.card {
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
+/* Contact Section */
 #contact h2.display-2 {
     text-decoration: none !important;
     border-bottom: none !important;
-
     color: rgb(255, 252, 252);
     text-align: center;
-
 }
 
 .contact-method {
     color: #000000;
     text-align: center;
-
 }
 
 #contact p {
     font-size: xx-large;
-
 }
 
 #contact h4 {
     font-size: x-large;
     text-align: center;
-
 }
 
 #contact .btn {
     color: rgb(255, 253, 248);
-    height: 60px;
+    height: 65px;
     font-size: larger;
 }
 
 #contact .btn:hover {
     background-color: rgb(6, 6, 52) !important;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+
+    /* Navbar adjustments */
+    .nav-link {
+        margin-left: 0;
+        font-size: large;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+
+    /* Button adjustments */
+    .btn {
+        width: 100%;
+        max-width: 230px;
+        margin: 0.5rem auto;
+        display: block;
+        height: auto;
+        padding: 0.75rem;
+    }
+
+    /* Home section */
+    #home {
+        padding: 4rem 1rem;
+    }
+
+    /* Profile image */
+    .profile-img {
+        max-width: 120px;
+    }
+
+    /* Section spacing */
+    .shadow-lg {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    /* Contact section */
+    #contact p {
+        font-size: large;
+    }
+
+    #contact .btn {
+        height: auto;
+        font-size: medium;
+    }
+
+    /* General layout fixes */
+    section {
+        padding: 1.5rem 0;
+        margin: 0;
+    }
+
+    .mb-5,
+    .my-5 {
+        margin-bottom: 2rem !important;
+    }
+}
+
+/* Prevent layout issues */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section {
+    min-height: fit-content;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
 }
