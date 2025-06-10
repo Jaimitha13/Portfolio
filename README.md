@@ -32,7 +32,7 @@ This portfolio reflects my journey as a **Python Full Stack Developer**. It incl
 
 ## 🌍 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/🚀_View_Live_Portfolio-FF5722?style=for-the-badge)](https://your-portfolio-url.com)  
+[![Live Demo](https://img.shields.io/badge/🚀_View_Live_Portfolio-FF5722?style=for-the-badge)]( https://jaimitha13.github.io/Portfolio/)  
 ---
 
 ## 🎥 Screenshots & Video Demo
