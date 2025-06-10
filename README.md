@@ -45,7 +45,7 @@ This portfolio reflects my journey as a **Python Full Stack Developer**. It incl
 
 ### ▶️ Video Demo
 
-📽️ [Watch Demo on YouTube](https://your-youtube-demo-link.com)
+📽️ [Watch Demo on YouTube](https://github.com/Jaimitha13/Portfolio/blob/1ccf261692f813a7327e90fe52fe7e80c343cce1/Screen%20Recording%202025-06-10%20220741.mp4)
 
 ---
 
