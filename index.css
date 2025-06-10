@@ -13,16 +13,6 @@ body {
     color: #000000;
 }
 
-.navbar-toggler {
-    background-color: #ff0000;
-    /* Your desired background color */
-    padding: 0.25rem 0.5rem;
-    /* Adjust padding as needed */
-    border-radius: 0.25rem;
-    /* Optional: rounded corners */
-
-    color: #000000;
-}
 
 
 .nav-link {
@@ -41,19 +31,22 @@ body {
     margin-left: 40px;
 }
 
-/* Mobile Navbar */
-.navbar-toggler {
-    border-color: #ffffff;
+
+
+.navbar-toggler-icon {
+    background-color: #040303;
     /* White */
 }
 
-.navbar-toggler-icon {
-    background-color: #ffffff;
-    /* White */
+.nav-link:hover {
+    background-color: white;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 20px;
 }
 
 .container {
-    color: whitesmoke;
+    color: rgb(255, 249, 249);
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -99,7 +92,7 @@ body {
 
 p {
     font-size: 1.05rem;
-    line-height: 1.6;
+    line-height: 1.9;
 }
 
 .edu-card {
@@ -120,10 +113,7 @@ p {
     object-fit: cover;
 }
 
-.edu-card .card-title {
-    color: #0d6efd;
-    font-weight: 600;
-}
+
 
 #skills {
     color: whitesmoke;
@@ -200,13 +190,7 @@ p {
 }
 
 
-#certificate .card-body {
 
-    background-color: rgb(255, 255, 254);
-    height: 250px;
-    text-align: center;
-    border-radius: 50px;
-}
 
 
 /* Section Heading */
@@ -225,18 +209,8 @@ section h2 {
     transition: all 0.3s;
 }
 
-.btn-outline-primary:hover {
-    background-color: #0d6efd;
-    color: white;
-    transform: scale(1.05);
-}
 
-.project-title {
-    font-size: 2rem;
-    color: #0d6efd;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
+
 
 .card {
     border-radius: 12px;
