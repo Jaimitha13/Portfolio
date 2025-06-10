@@ -1,14 +1,15 @@
-# 💼 Jaimitha K – Developer Portfolio
+# 💼 Jaimitha LK – Portfolio
 
-Welcome to my **Personal Portfolio Website** built to showcase my skills, projects, certifications, and career journey in web development and software engineering.
+Heartening Greetings everyone those who visit  my **Personal Portfolio Website** built to showcase my skills, projects, certifications, and career journey in web development and software engineering. and transverse to my coding tour which is combination of problem-solving, logical thinking, and creative ideas.
 
 ---
 
-## 📋 Project Name
+## 📋 Project Topic
 
-**Portfolio Website – Jaimitha K**
+**Portfolio Website – Jaimitha LK**
+A clean, mobile-friendly portfolio featuring my work, skills, and contact details—built to impress and engage. and Step into my digital showcase—a fast, responsive portfolio designed to highlight my best work, skills, and how I can bring value to your team
 
-A modern, responsive personal portfolio website designed to highlight my background, showcase my projects, and provide ways for people to contact or hire me.
+
 
 ---
 
