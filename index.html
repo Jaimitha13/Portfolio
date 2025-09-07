@@ -23,19 +23,20 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand text-dark" href="#">Jaimitha - Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-dark fw-bold fs-1" href="#">LK. Jaimitha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link text-dark" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#education-courses">Education</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#project">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -44,7 +45,7 @@
 
     <!-- Home Section -->
     <section id="home" class="d-flex align-items-center text-center text-light"
-        style="height: 100vh; background-color: #222;">
+        style="height: 100vh;">
         <div class="container mt-5 pt-5">
             <h1 class="display-2">Hi, I'm <span class="text-warning">Jaimitha LK</span></h1>
             <p class="lead fs-1">
@@ -52,35 +53,40 @@
             </p>
             <p class="mb-4 fs-4">A creative fullstack developer who truly has knowledge and interest in the development
                 field.</p>
-            <a href="resume/Jaimitha - Frontend web developer_FresherResume.pdf" download class="btn btn-primary m-2">Download
+            <a href="resume/Jaimitha_Fullstackdeveloper_Resume .pdf" download class="btn btn-primary m-2">Download
                 Resume</a>
-            <a href="https://www.linkedin.com/in/jaimitha-lk2001" class="btn btn-outline-light btn-light m-2"
+            <a href="https://www.linkedin.com/in/jaimitha-lk2001" class="btn btn-outline-light btn-primary m-2"
                 target="_blank">LinkedIn</a>
         </div>
     </section>
 
 
-    <section id="about" class="container mt-5 shadow-lg bg-dark rounded">
-        <div class="p-4 text-center text-white fade-in">
-            <!-- Typing Heading -->
-            <h1 class="display-1 mb-4">
-                About Me
-            </h1>
+    <section id="about" class="container mt-5 shadow-lg  rounded">
+        <div class="p-5 text-center text-white fade-in">
+            <!-- Section Heading -->
+            <h1 class="display-4 fw-bold mb-5 text-primary">About Me</h1>
+    
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <img src="images/Jaimitha.jpg" alt="Professional Profile"
+                class="img-fluid rounded img-thumbnail shadow mb-4 mb-md-0 me-md-5 profile-img" width="400">
 
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-dark">
-                <!-- Profile Image -->
-                <img src="images/Srijai.jpg" alt="Profile Image"
-                    class="img-fluid thumnbnail mb-4 mb-md-0 me-md-5 profile-img" width="150px">
-
-                <!-- Brief About Text -->
-                <div class="bg-light p-4 rounded shadow">
-                    <h3>Hello! I'm <strong>Jaimitha</strong></h3>
+    
+                <!-- About Text -->
+                <div class="bg-light text-dark p-4 p-md-5 rounded shadow-lg text-start">
+                    <h3 class="fw-bold">Hi, I’m <span class="text-primary">Jaimitha</span> 👋</h3>
+                    <p class="mt-3">
+                        I’m a <strong>Python Full-Stack Developer</strong> with a unique background in
+                        <strong>English Literature</strong>. I love transforming ideas into
+                        <em>functional, user-friendly</em> applications.
+                    </p>
                     <p>
-                        A passionate <strong>Python full-stack developer</strong> with a background in <strong>English
-                            literature</strong>.
-                        I enjoy turning ideas into practical, user-friendly web applications using technologies like
-                        <strong>Django, Flask, JavaScript</strong> and modern frontend tools. Always eager to learn and
-                        grow!
+                        My toolkit includes <strong>Django, JavaScript, Bootstrap, and MySQL</strong>.
+                        I’m constantly exploring modern frameworks and sharpening my skills to
+                        deliver clean, efficient, and responsive solutions.
+                    </p>
+                    <p>
+                        Beyond coding, I bring <span class="fw-semibold">problem-solving, creative thinking,
+                            and adaptability</span> to every project I work on.
                     </p>
                 </div>
             </div>
@@ -89,238 +95,235 @@
 
 
 
-    <!-- Education Section -->
-    <section class="container my-5" id="education">
-        <div class="text-center mb-5">
-            <h1 class="display-1 fw-bold">Education</h1>
-            <p class="fs-5 bg-danger text-white d-inline-block px-3 py-1 rounded">A journey of learning, growth, and
-                achievement</p>
+<!-- Education & Courses Section -->
+<section class="container my-5" id="education-courses">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Education & Courses</h1>
+        <p class="fs-5 text-light">A journey of learning, growth, and technical training</p>
+    </div>
+
+    <!-- Education Row -->
+    <h2 class="fw-bold text-secondary mb-4 text-light">Education</h2>
+    <div class="row g-4 mb-5">
+        <!-- MA in English -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-lg border-0 edu-card">
+                <img src="images/Govt-Arts-Women-Pudukottai-1024x674.jpg" class="card-img-top img-fluid edu-img"
+                    alt="MA in English">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">MA in English</h5>
+                    <p class="card-text"><i class="fas fa-university me-2 text-primary"></i> Kalaignar Karunanidhi Govt.
+                        Arts College for Women, Pudukkottai</p>
+                    <p class="card-text"><i class="fas fa-calendar-alt me-2 text-secondary"></i> 2022 – 2024</p>
+                    <p class="card-text"><i class="fas fa-star me-2 text-warning"></i> 73%</p>
+                </div>
+            </div>
         </div>
 
-        <div class="row g-4">
-            <!-- MA in English -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm edu-card p-3">
-                    <h5 class="card-title text-dark">MA in English</h5>
-                    <p class="card-text text-dark"><strong>College:</strong> Kalaignar Karunanidhi Govt. Arts College
-                        for Women,
+        <!-- BA in English -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-lg border-0 edu-card">
+                <img src="images/jj.jpeg" class="card-img-top img-fluid edu-img" alt="BA in English">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">BA in English</h5>
+                    <p class="card-text"><i class="fas fa-university me-2 text-primary"></i> J.J College of Arts &
+                        Science, Pudukkottai</p>
+                    <p class="card-text"><i class="fas fa-calendar-alt me-2 text-secondary"></i> 2019 – 2022</p>
+                    <p class="card-text"><i class="fas fa-star me-2 text-warning"></i> 72%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Higher Secondary -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-lg border-0 edu-card">
+                <img src="images/vaiwebp.webp" class="card-img-top img-fluid edu-img" alt="Higher Secondary">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Higher Secondary</h5>
+                    <p class="card-text"><i class="fas fa-school me-2 text-primary"></i> Vairams Matric Hr. Sec. School,
                         Pudukkottai</p>
-                    <p class="card-text text-dark"><strong>Year:</strong> 2022 – 2024</p>
-                    <p class="card-text text-dark"><strong>Percentage:</strong> 73%</p>
-                </div>
-            </div>
-
-            <!-- BA in English -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm edu-card p-3">
-                    <h5 class="card-title text-dark">BA in English</h5>
-                    <p class="card-text text-dark"><strong>College:</strong> J.J College of Arts & Science, Pudukkottai
-                    </p>
-                    <p class="card-text text-dark"><strong>Year:</strong> 2019 – 2022</p>
-                    <p class="card-text text-dark"><strong>Percentage:</strong> 72%</p>
-                </div>
-            </div>
-
-            <!-- Higher Secondary -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm edu-card p-3">
-                    <h5 class="card-title text-dark">Higher Secondary</h5>
-                    <p class="card-text text-dark"><strong>School:</strong> Vairams Matric Hr. Sec. School, Pudukkottai
-                    </p>
-                    <p class="card-text text-dark"><strong>Year:</strong> 2018 – 2019</p>
-                    <p class="card-text text-dark"><strong>Percentage:</strong> 67%</p>
-                </div>
-            </div>
-
-            <!-- SSLC -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm edu-card p-3">
-                    <h5 class="card-title text-dark">SSLC</h5>
-                    <p class="card-text text-dark"><strong>School:</strong> Karpaga Vinayaga Matric Hr. Sec. School,
-                        Pudukkottai
-                    </p>
-                    <p class="card-text text-dark"><strong>Year:</strong> 2016 – 2017</p>
-                    <p class="card-text text-dark"><strong>Percentage:</strong> 85%</p>
+                    <p class="card-text"><i class="fas fa-calendar-alt me-2 text-secondary"></i> 2018 – 2019</p>
+                    <p class="card-text"><i class="fas fa-star me-2 text-warning"></i> 67%</p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- SSLC -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 shadow-lg border-0 edu-card">
+                <img src="images/kvs.jpg" class="card-img-top img-fluid edu-img" alt="SSLC">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">SSLC</h5>
+                    <p class="card-text"><i class="fas fa-school me-2 text-primary"></i> Karpaga Vinayaga Matric Hr.
+                        Sec. School, Pudukkottai</p>
+                    <p class="card-text"><i class="fas fa-calendar-alt me-2 text-secondary"></i> 2016 – 2017</p>
+                    <p class="card-text"><i class="fas fa-star me-2 text-warning"></i> 85%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses Row -->
+    <h2 class="fw-bold text-secondary mb-4 text-light">Courses</h2>
+    <div class="row g-4 justify-content-center">
+        <!-- Course 1 -->
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg border-0 h-100 course-card">
+                <div class="card-body p-4">
+                    <h3 class="card-title fw-bold text-dark mb-3">Python Fullstack Development</h3>
+                    
+                    <p><i class="fas fa-tools me-2 text-secondary"></i> HTML, CSS3, JavaScript, Bootstrap, Python,
+                        Django, MySQL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg border-0 h-100 course-card">
+                <div class="card-body p-4">
+                    <h3 class="card-title fw-bold text-dark mb-3">Diploma in Computer Applications (DCA)</h3>
+                    
+                    <p><i class="fas fa-tools me-2 text-secondary"></i> MS Word, MS Excel, MS PowerPoint, HTML</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
-    <section id="skills">
-        <div class="container mt-4 p-4 mb-5">
-            <h2 class="text-center text-light display-1 fw-bold mb-5">Professional Skills</h2>
-
-            <!-- Row 1: HTML, CSS, JavaScript, Bootstrap -->
-            <div class="row mb-5">
-                <!-- HTML -->
+    <!-- Professional Skills Section -->
+    <section id="skills" class="py-5" style="background: linear-gradient(135deg, #0d0d0d, #1a1a1a);">
+        <div class="container text-center">
+            <h2 class="text-center text-primary display-4 fw-bold mb-5">
+                <i class="bi bi-stars me-2"></i> Professional Skills
+            </h2>
+    
+            <div class="row g-4">
+                <!-- Skill Card -->
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            <i class="bi bi-filetype-html"></i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
-                            </svg> HTML
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" style="width: 90%">90%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">
+                            <i class="bi bi-filetype-html text-danger fs-4 me-2"></i> HTML
+                        </h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-danger fw-bold" style="width: 90%">90%</div>
                         </div>
                     </div>
                 </div>
-
-
+    
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            <i class="bi bi-css">
-                            </i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-css" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V0zM4.59 7.498q-.908 0-1.455.508-.547.507-.547 1.484v3.106q0 .986.527 1.484t1.406.498q.576 0 1.016-.224.45-.225.703-.674.255-.45.254-1.114v-.185h-1.22v.176q0 .449-.186.683t-.527.235q-.372-.01-.557-.264-.186-.255-.186-.752V9.686q0-.547.166-.811.177-.264.577-.264.321 0 .517.225.195.224.195.693v.205h1.23V9.52q0-.674-.243-1.124a1.55 1.55 0 0 0-.664-.673q-.42-.225-1.006-.225m4.214-.01q-.586 0-1.006.244a1.67 1.67 0 0 0-.635.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.304.42.967.732l.469.215q.44.186.625.43.186.244.186.635 0 .478-.166.703-.157.224-.528.224-.36 0-.547-.244-.185-.243-.205-.752H6.87q.02.996.498 1.524.479.527 1.387.527t1.416-.518.508-1.484q0-.81-.332-1.289-.333-.479-1.045-.79l-.45-.196q-.39-.166-.556-.381-.165-.214-.166-.576 0-.4.166-.596.175-.195.508-.195.36 0 .508.234.156.234.175.703h1.123q-.03-.976-.498-1.484-.468-.518-1.308-.518m4.057 0q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518" />
-                            </svg> CSS
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 85%">85%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">
+                            <i class="bi bi-filetype-css text-primary fs-4 me-2"></i> CSS
+                        </h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-primary fw-bold" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
-
-                <!--Bootstrap-->
+    
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            <i class="bi bi-bootstrap-fill"></i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z" />
-                                <path
-                                    d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z" />
-                            </svg>
-                            Bootstrap
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 85%">85%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">
+                            <i class="bi bi-bootstrap-fill text-purple fs-4 me-2"></i> Bootstrap
+                        </h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-purple fw-bold" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
-
-                <!-- JavaScript -->
+    
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            <i class="bi bi-javascript"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-javascript" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zM9.053 7.596v3.127l-.007 1.752q0 .498-.186.752t-.556.263q-.342 0-.528-.234-.185-.234-.185-.684v-.175H6.37v.185q0 .665.253 1.113.255.45.703.674.44.225 1.016.225.88 0 1.406-.498.527-.498.527-1.485l.007-1.752V7.596zm3.808-.108q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518" />
-                                </svg></i> JavaScript
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" style="width: 70%">70%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">
+                            <i class="bi bi-filetype-js text-warning fs-4 me-2"></i> JavaScript
+                        </h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-warning fw-bold" style="width: 70%">70%</div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Row 2: Python, Flask, MySQL -->
-            <div class="row mb-5">
-                <!-- Python -->
+    
+            <!-- Row 2 -->
+            <div class="row g-4 mt-4">
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            <i class="bi bi-filetype-py"></i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-filetype-py" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM0 11.85h1.6q.434 0 .732.179.302.175.46.477t.158.677-.16.677q-.158.299-.464.474a1.45 1.45 0 0 1-.732.173H.79v1.342H0zm2.06 1.714a.8.8 0 0 0 .085-.381q0-.34-.185-.521-.185-.182-.513-.182H.788v1.406h.66a.8.8 0 0 0 .374-.082.57.57 0 0 0 .238-.24m2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855z" />
-                            </svg>
-                            Python
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" style="width: 85%">85%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">
+                            <i class="bi bi-filetype-py text-success fs-4 me-2"></i> Python
+                        </h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-success fw-bold" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Flask -->
+    
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            Flask
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" style="width: 75%">75%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">Tailwind</h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-dark fw-bold" style="width: 75%">75%</div>
                         </div>
                     </div>
                 </div>
-
-                <!-- MySQL -->
+    
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            <i class="bi bi-filetype-sql"></i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-filetype-sql" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M14 4.5V14a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM0 14.841a1.13 1.13 0 0 0 .401.823q.194.162.478.252c.284.09.411.091.665.091q.507 0 .858-.158.355-.159.54-.44a1.17 1.17 0 0 0 .187-.656q0-.336-.135-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.565-.21l-.621-.144a1 1 0 0 1-.405-.176.37.37 0 0 1-.143-.299q0-.234.184-.384.187-.152.513-.152.214 0 .37.068a.6.6 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.199-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.44 0-.776.15-.337.149-.528.421-.19.273-.19.639 0 .302.123.524t.351.367q.229.143.54.213l.618.144q.31.073.462.193a.39.39 0 0 1 .153.325q0 .165-.085.29A.56.56 0 0 1 2 15.31q-.167.07-.413.07-.176 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zm6.878 1.489-.507-.739q.264-.243.401-.6.138-.358.138-.806v-.501q0-.556-.208-.967a1.5 1.5 0 0 0-.589-.636q-.383-.225-.917-.225-.527 0-.914.225-.384.223-.592.636a2.14 2.14 0 0 0-.205.967v.5q0 .554.205.965.208.41.592.636a1.8 1.8 0 0 0 .914.222 1.8 1.8 0 0 0 .6-.1l.294.422h.788ZM4.262 14.2v-.522q0-.369.114-.63a.9.9 0 0 1 .325-.398.9.9 0 0 1 .495-.138q.288 0 .495.138a.9.9 0 0 1 .325.398q.115.261.115.63v.522q0 .246-.053.445-.053.196-.155.34l-.106-.14-.105-.147h-.733l.451.65a.6.6 0 0 1-.251.047.87.87 0 0 1-.487-.147.9.9 0 0 1-.32-.404 1.7 1.7 0 0 1-.11-.644m3.986 1.057h1.696v.674H7.457v-3.999h.79z" />
-                            </svg>
-                            MySQL
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" style="width: 80%">80%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">
+                            <i class="bi bi-database-check text-info fs-4 me-2"></i> MySQL
+                        </h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-info fw-bold" style="width: 80%">80%</div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Row 3: Soft Skills -->
-            <div class="row mb-5">
-                <!-- Communication -->
+    
+            <!-- Row 3 - Soft Skills -->
+            <div class="row g-4 mt-4">
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            Communication
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 85%">85%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">Communication</h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-primary fw-bold" style="width: 85%">85%</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">Problem Solving</h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-primary fw-bold" style="width: 85%">85%</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-3">
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">Logical Thinking</h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-primary fw-bold" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Problem Solving -->
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            Problem Solving
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" style="width: 75%">75%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">Team Collaboration</h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-primary fw-bold" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Logical Thinking -->
+    
                 <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            Logical Thinking
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" style="width: 75%">75%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Creative ideas -->
-                <div class="col-md-3">
-                    <div class="skill-card">
-                        <label class="fw-bold skill-label text-dark">
-                            Creative ideas
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" style="width: 85%">85%</div>
+                    <div class="skill-card p-4 shadow-lg rounded-4 bg-light h-100">
+                        <h5 class="fw-bold mb-3 text-dark">Creative Ideas</h5>
+                        <div class="progress rounded-pill" style="height: 12px;">
+                            <div class="progress-bar bg-primary fw-bold" style="width: 85%">85%</div>
                         </div>
                     </div>
                 </div>
@@ -329,142 +332,134 @@
     </section>
 
 
-    <section id="project" class="container mt-5 shadow-lg bg-dark rounded">
-        <div class="p-4 text-center text-white fade-in">
-            <!-- Typing Heading -->
-            <h1 class="display-1 mb-4">
-                Projects
-            </h1>
+<!-- Projects Section -->
+<section id="projects" class="container my-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Projects</h1>
+        <p class="fs-5 text-light">A showcase of some of my featured work</p>
+    </div>
 
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-dark">
-                <!-- Profile Image -->
-                <img src="images/Screenshot 2025-05-26 103831.png" alt="Profile Image"
-                    class="img-fluid thumnbnail mb-4 mb-md-0 me-md-5 profile-img" width="450px">
-
-                <!-- Brief About Text -->
-                <div class="bg-light p-4 rounded shadow">
-                    <h3 class="display-9">To-Do-List-App</h3>
-                    <p class="display-9">Role - Solo Developer</p>
-                    <p class="display-7">Technologies Used - HTML, CSS3, Javascript, Bootstrap </p>
-
-                    <p class="display-7">Duration: May 2025-May 2025</p>
-                    <p class="display-7">Elaboration about the project - This is a responsive web-based To-Do List
-                        application built using HTML, CSS, JavaScript, and Bootstrap. The app allows
-                        users to add and delete tasks, helping them manage their daily activities, goals, and schedules
-                        effectively. </p>
-                    <a class="btn btn-primary" href="https://jaimitha13.github.io/to-do-list/" role="button">Live
-                        project</a>
-                    <a class="btn btn-primary" href="https://github.com/Jaimitha13/to-do-list" role="button">Code
+    <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg border-0 project-card">
+                <img src="images/Screenshot 2025-09-02 224154.png" class="card-img-top project-img"
+                    alt="To-Do-List-App">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">To-Do List App</h5>
+                    <p class="card-text"><strong>Role:</strong> Solo Developer</p>
+                    <p class="card-text"><strong>Tech:</strong> HTML, CSS, Django, Database - MySQL </p>
+                    <p class="card-text">The application allows users to signup, login, logout, add, update, and delete tasks, providing a structured way to organize
+                    personal or professional tasks. It is designed with a clean and responsive interface, making it user-friendly on both
+                    desktop and mobile devices.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <a class="btn btn-dark" href="https://github.com/Jaimitha13/Todolist" target="_blank">
+                        <i class="fab fa-github me-2"></i> Code
                     </a>
-
-
                 </div>
             </div>
-            <br>
-            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-dark">
-                <!-- Profile Image -->
-                <img src="images/Screenshot 2025-05-25 172037.png" alt="Profile Image"
-                    class="img-fluid thumnbnail mb-4 mb-md-0 me-md-5 profile-img" width="450px">
+        </div>
 
-                <!-- Brief About Text -->
-                <div class="bg-light p-4 rounded shadow">
-                    <h3 class="display-9">Digital Clock</h3>
-                    <p class="display-9">Role - Solo Developer</p>
-                    <p class="display-7">Technologies Used - HTML, CSS3, Javascript, Bootstrap </p>
-
-                    <p class="display-7">Duration: May 2025-May 2025</p>
-                    <p class="display-7">My project explains about the digital clock which is extremely used in modern
-                        world now-a-days. Digital clock are
-                        numerical formatted one and easy to use. This watch is opposite to analog clock. Hereby prompted
-                        by HTML, CSS, Bootstrap,
-                        Javascript. </p>
-                    <a class="btn btn-primary" href="https://jaimitha13.github.io/Digital-clock/" role="button">Live
-                        project</a>
-                    <a class="btn btn-primary" href="https://github.com/Jaimitha13/Digital-clock" role="button">Code
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg border-0 project-card">
+                <img src="images/Screenshot 2025-09-06 134747.png" class="card-img-top project-img" alt="Chat Application">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Real-Time Chat App</h5>
+                    <p class="card-text"><strong>Role:</strong> Solo Developer</p>
+                    <p class="card-text"><strong>Tech:</strong> HTML, CSS, Javascript, Django, Django channels, Redis, Websocket, and database Postgresql</p>
+                    <p class="card-text">A real-time chat application with user authentication, multiple chat rooms, and
+                        instant messaging built using Redis, Django Channels and WebSockets.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <a class="btn btn-dark" href="https://github.com/Jaimitha13/Chat-Application-project"
+                        target="_blank">
+                        <i class="fab fa-github me-2"></i> Code
                     </a>
-
-
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="course" class="container mt-5 shadow-lg bg-dark rounded">
-        <div class="p-4 text-white fade-in">
-            <!-- Heading -->
-            <h1 class="display-5 mb-4 text-center">Courses</h1>
-
-            <div class="row g-4 justify-content-center">
-                <!-- Course 1 -->
-                <div class="col-md-5">
-                    <div class="bg-light text-dark p-4 rounded shadow h-100">
-                        <h3 class="h2 mb-3">Python Fullstack Development</h3>
-                        <p class="lead mb-2"><strong>Institution:</strong> CCI Computer Education, Pudukkottai</p>
-                        <p class="lead"><strong>Skills:</strong> HTML, CSS3, JavaScript, Bootstrap, Python, Flask, Mysql
-                        </p>
-                    </div>
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-lg border-0 project-card">
+                <img src="images/port.png" class="card-img-top project-img" alt="Portfolio Website">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Portfolio Website</h5>
+                    <p class="card-text"><strong>Role:</strong> Solo Developer</p>
+                    <p class="card-text"><strong>Tech:</strong> HTML, CSS, Bootstrap, JavaScript</p>
+                    <p class="card-text">A fully responsive and professional portfolio website to showcase projects,
+                        education, and skills with modern UI and animations.</p>
                 </div>
-
-                <!-- Course 2 -->
-                <div class="col-md-5">
-                    <div class="bg-light text-dark p-4 rounded shadow h-100">
-                        <h3 class="h2 mb-3">DCA</h3>
-                        <p class="lead mb-2"><strong>Institution:</strong> CCI Computer Education, Pudukkottai</p>
-                        <p class="lead"><strong>Skills:</strong> MS Word, MS Excel, MS PowerPoint</p>
-                    </div>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <a class="btn btn-dark" href="https://github.com/Jaimitha13/Portfolio" target="_blank">
+                        <i class="fab fa-github me-2"></i> Code
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
 
-    <!-- Contact Me Section -->
-    <section id="contact" class="py-5">
-        <div class="container shadow-lg">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h2 class="display-2 fw-bold" style="text-decoration: none !important;">Contact Me</h2>
-                    <p class="lead">Feel free to reach out through any of these channels</p>
-                </div>
+<!-- Contact Me Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center mb-5">
+                <h2 class="display-4 fw-bold text-primary">Contact Me</h2>
+                <p class="fs-5 text-muted">Let’s connect! Reach out via email, WhatsApp, or a quick call.</p>
             </div>
+        </div>
 
-            <div class="row justify-content-center">
-                <div class="col-md-6 shadow-lg p-5 rounded-3 bg-light">
-                    <div class="contact-method mb-4">
-                        <h4><i class="bi bi-envelope-fill me-2"></i> Email</h4>
-                        <a href="mailto:lkjaimitha@gmail.com" class="btn bg-danger mt-2">
-                            Send Email
-                        </a>
-                    </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-4">
+                        <!-- Email -->
+                        <div class="contact-method mb-4 text-center">
+                            <h4 class="fw-bold"><i class="bi bi-envelope-fill me-2 text-danger"></i>Email</h4>
+                            <a href="mailto:lkjaimitha@gmail.com" class="btn btn-danger mt-2 px-4 py-2 rounded-pill">
+                                Send Email
+                            </a>
+                        </div>
 
-                    <div class="contact-method mb-4">
-                        <h4><i class="bi bi-whatsapp me-2"></i> WhatsApp</h4>
-                        <a href="https://wa.me/916374115168?text=Hello%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect!"
-                            class="btn bg-danger mt-2" target="_blank">
-                            Message on WhatsApp
-                        </a>
-                    </div>
+                        <!-- WhatsApp -->
+                        <div class="contact-method mb-4 text-center">
+                            <h4 class="fw-bold"><i class="bi bi-whatsapp me-2 text-success"></i>WhatsApp</h4>
+                            <a href="https://wa.me/916374115168?text=Hello%2C%20I%20visited%20your%20portfolio%20and%20want%20to%20connect!"
+                                class="btn btn-success mt-2 px-4 py-2 rounded-pill" target="_blank">
+                                Message on WhatsApp
+                            </a>
+                        </div>
 
-                    <div class="contact-method">
-                        <h4><i class="bi bi-telephone-fill me-2"></i> Call Me</h4>
-                        <a href="tel:+916374115168" class="btn  bg-danger mt-2">
-                            Call Now
-                        </a>
+                        <!-- Phone -->
+                        <div class="contact-method text-center">
+                            <h4 class="fw-bold"><i class="bi bi-telephone-fill me-2 text-primary"></i>Call Me</h4>
+                            <a href="tel:+916374115168" class="btn btn-primary mt-2 px-4 py-2 rounded-pill">
+                                Call Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
 
 
     <script src="index.js"></script>
 
     <!-- Typed.js Initialization Script -->
+    <script>
 
+    </script>
 
-
+    <!-- Bootstrap Bundle JS -->
 
 
 </body>
