@@ -70,7 +70,8 @@ The website is fully responsive and built using modern frontend technologies.
 
 | Home Page | About Me Section |
 |-----------|------------------|
-| ![Home](https://raw.githubusercontent.com/Jaimitha13/Portfolio/42eeaa912514d51e12ef6ae63bb95898f2c6a821/Screenshot%202025-06-10%20221144.png) | ![About](https://raw.githubusercontent.com/Jaimitha13/Portfolio/a4c481952fd16cd4f7864fd7dec488e14a22da97/Screenshot%202025-06-10%20221231.png) |
+![Home](https://raw.githubusercontent.com/Jaimitha13/Portfolio/main/assets/images/port.png)
+ | ![About](https://raw.githubusercontent.com/Jaimitha13/Portfolio/a4c481952fd16cd4f7864fd7dec488e14a22da97/Screenshot%202025-06-10%20221231.png) |
 
 ---
 
