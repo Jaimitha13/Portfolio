@@ -1,53 +1,38 @@
-// Smooth scroll for nav links
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      window.scrollTo({
-        top: target.offsetTop - 60,
-        behavior: 'smooth'
-      });
-    }
-  });
+// Mouse Glow Smooth Effect
+const glow=document.querySelector(".cursor-glow");
+let mouseX=0,mouseY=0,currentX=0,currentY=0;
+document.addEventListener("mousemove",(e)=>{mouseX=e.clientX;mouseY=e.clientY;});
+function animate(){
+currentX+=(mouseX-currentX)*0.1;
+currentY+=(mouseY-currentY)*0.1;
+glow.style.left=currentX+"px";
+glow.style.top=currentY+"px";
+requestAnimationFrame(animate);
+}
+animate();
+
+// Scroll Reveal
+const sections=document.querySelectorAll(".fade-section");
+window.addEventListener("scroll",()=>{
+sections.forEach(sec=>{
+if(sec.getBoundingClientRect().top<window.innerHeight-100){
+sec.classList.add("show");
+}
+});
 });
 
- document.addEventListener("DOMContentLoaded", function () {
-    const roles = [
-      "JS Developer",
-      "Python Developer",
-      "Frontend Developer",
-      "Fullstack Developer"
-    ];
-    let index = 0;
-    let charIndex = 0;
-    let currentRole = "";
-    let isDeleting = false;
-    const typedSpan = document.getElementById("typed-role");
-
-    function type() {
-      if (isDeleting) {
-        currentRole = roles[index].substring(0, charIndex--);
-      } else {
-        currentRole = roles[index].substring(0, charIndex++);
-      }
-
-      typedSpan.textContent = currentRole;
-
-      if (!isDeleting && charIndex === roles[index].length) {
-        isDeleting = true;
-        setTimeout(type, 1200); // pause after typing
-        return;
-      }
-
-      if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        index = (index + 1) % roles.length;
-      }
-
-      const speed = isDeleting ? 70 : 120; // typing/deleting speed
-      setTimeout(type, speed);
-    }
-
-    type();
-  });
+// Typing Effect
+const roles=["Full Stack Developer","Django Backend Specialist","Frontend Developer"];
+let i=0,j=0,currentRole="",isDeleting=false;
+function type(){
+currentRole=roles[i];
+document.getElementById("typing").textContent=currentRole.substring(0,j);
+if(!isDeleting && j<currentRole.length){j++;}
+else if(isDeleting && j>0){j--;}
+else{
+isDeleting=!isDeleting;
+if(!isDeleting){i=(i+1)%roles.length;}
+}
+setTimeout(type,isDeleting?60:100);
+}
+type();
