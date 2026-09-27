@@ -2,391 +2,302 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jaimitha LK | Full Stack Developer</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jaimitha LK — Python & Django Backend Developer</title>
 <link rel="stylesheet" href="index.css">
 
-<style>
-   
-
-</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body class="antialiased">
 
-<div class="cursor-glow"></div>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-  <div class="container">
-
-    <!-- Brand -->
-    <a class="navbar-brand fw-bold" href="#">
-      <span class="brand-highlight">Jaimitha LK</span>
-    </a>
-
-    <!-- Toggler -->
-    <button class="navbar-toggler border-0" type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#nav"
-      aria-controls="nav"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Links -->
-    <div class="collapse navbar-collapse justify-content-end" id="nav">
-      <ul class="navbar-nav gap-3">
-
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-
-      </ul>
+<nav class="fixed top-0 w-full z-40 backdrop-blur border-b" style="background:rgba(11,18,32,.85); border-color:var(--line); padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-[70px]">
+    <a href="#top" class="display text-lg font-semibold">Jaimitha<span style="color:var(--teal)">.dev</span></a>
+    <div class="hidden md:flex gap-8 mono text-sm">
+      <a href="#about" class="hover:text-[var(--teal)]">About</a>
+      <a href="#skills" class="hover:text-[var(--teal)]">Skills</a>
+      <a href="#projects" class="hover:text-[var(--teal)]">Projects</a>
+      <a href="#experience" class="hover:text-[var(--teal)]">Experience</a>
+      <a href="#education" class="hover:text-[var(--teal)]">Education</a>
+      <a href="#contact" class="hover:text-[var(--teal)]">Contact</a>
     </div>
-
+    <button id="menuBtn" class="md:hidden btn btn-line px-3 py-2">Menu</button>
+  </div>
+  <div id="mobileMenu" class="md:hidden max-h-0 px-6 mono text-sm flex flex-col border-t" style="border-color:var(--line)">
+    <a href="#about" class="py-3 border-b" style="border-color:var(--line)">About</a>
+    <a href="#skills" class="py-3 border-b" style="border-color:var(--line)">Skills</a>
+    <a href="#projects" class="py-3 border-b" style="border-color:var(--line)">Projects</a>
+    <a href="#experience" class="py-3 border-b" style="border-color:var(--line)">Experience</a>
+    <a href="#education" class="py-3 border-b" style="border-color:var(--line)">Education</a>
+    <a href="#contact" class="py-3">Contact</a>
   </div>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
-<div class="container">
-<h1>Hi, I'm <span class="highlight">Jaimitha LK</span></h1>
-<h4 id="typing" class="mt-3"></h4>
-<p class="mt-4">
-Full Stack Developer specializing in Django backend systems, REST APIs, and scalable web applications. 
-Passionate about writing clean, optimized, and production-ready code.
-</p>
-<div class="mt-4">
-<a href="resume/Jaimitha_LK_Pythondeveloper.pdf" class="btn btn-custom btn-lg me-3">Download Resume</a>
-<a href="https://github.com/Jaimitha13" target="_blank" class="btn btn-outline-light btn-lg">
-<i class="fab fa-github"></i> GitHub
-</a>
-</div>
-</div>
-</section>
+<header id="top" class="max-w-6xl mx-auto px-6 pt-32 pb-20 md:pt-40 md:pb-28 grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center">
+  <div>
+    <p class="mono text-sm mb-4" style="color:var(--teal)">Hi, I'm Jaimitha LK</p>
+    <h1 class="display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.1] mb-6">
+      Python &amp; Django backend developer, building clean, scalable web APIs.
+    </h1>
+    <p class="max-w-lg text-base leading-relaxed mb-8" style="color:var(--muted)">
+      I design and build REST APIs, real-time systems, and full stack applications with Django, DRF, and React — with a background in English Literature that shapes how carefully I read, write, and document code.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      <a href="resume/LK.Jaimitha_Backend_Developer_resume.pdf" class="btn btn-fill"><i class="fas fa-download"></i>Résumé</a>
+      <a href="https://github.com/Jaimitha13" target="_blank" class="btn btn-line"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://www.linkedin.com/in/jaimitha-lk2001" target="_blank" class="btn btn-line"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    </div>
+  </div>
+  <div class="justify-self-center">
+    <svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="160" cy="160" r="150" fill="#111A2C" stroke="#2FBFA8" stroke-opacity=".35"/>
+      <circle cx="160" cy="160" r="110" fill="#161F33"/>
+      <rect x="95" y="115" width="130" height="90" rx="8" fill="#0B1220" stroke="#2FBFA8" stroke-opacity=".5"/>
+      <rect x="105" y="128" width="55" height="6" rx="3" fill="#2FBFA8"/>
+      <rect x="105" y="142" width="80" height="6" rx="3" fill="#E8B04B"/>
+      <rect x="105" y="156" width="65" height="6" rx="3" fill="#8B93A7"/>
+      <rect x="105" y="170" width="90" height="6" rx="3" fill="#8B93A7"/>
+      <rect x="105" y="184" width="40" height="6" rx="3" fill="#2FBFA8"/>
+      <circle cx="228" cy="92" r="26" fill="#0B1220" stroke="#E8B04B" stroke-opacity=".6"/>
+      <text x="228" y="99" font-family="Space Grotesk, sans-serif" font-size="16" fill="#E8B04B" text-anchor="middle">JL</text>
+      <path d="M70 235 Q160 205 250 235" stroke="#2FBFA8" stroke-opacity=".4" fill="none" stroke-width="2"/>
+    </svg>
+  </div>
+</header>
 
-<!-- About -->
-<section id="about" class="fade-section">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
-
-    <div class="glass">
-
-      <p>
-        I come from a non-IT background with a Master's degree in English Literature, 
-        but my strong passion for technology led me into the world of software development. 
-        I successfully transitioned into tech by mastering full stack development 
-        with a strong focus on backend engineering.
-      </p>
-
-      <p class="mt-3">
-        As a Django Intern, I have hands-on experience building real-world web applications 
-        using Python, Django, REST APIs, PostgreSQL, and frontend technologies like 
-        HTML, CSS, JavaScript, and React.js.
-      </p>
-
-      <p class="mt-3">
-        I have worked with Django Channels, Redis, and WebSockets to build 
-        real-time applications, implemented secure authentication systems, 
-        and optimized database queries using SQL and PostgreSQL.
-      </p>
-
-      <p class="mt-3">
-        My non-technical background strengthens my communication, documentation, 
-        and analytical skills, enabling me to write clean, maintainable, and 
-        production-ready code.
-      </p>
-
+<section id="about" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
+  <p class="mono text-sm mb-3" style="color:var(--teal)">// about</p>
+  <h2 class="display text-3xl font-semibold mb-8">From literature to logic.</h2>
+  <div class="grid md:grid-cols-2 gap-10">
+    <div class="space-y-4 leading-relaxed" style="color:var(--muted)">
+      <p>I came to software from a non-technical background — a BA and MA in English Literature — and made a deliberate move into full stack development, focused on backend engineering.</p>
+      <p>Years of close reading trained me to notice structure, ambiguity, and edge cases before they become bugs. I bring that same attention to Django applications: REST APIs, relational schemas, authentication, and real-time systems built with Channels and Redis.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--teal)">6–7</p><p class="mono text-xs mt-1" style="color:var(--muted)">months, backend internship</p></div>
+      <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--gold)">5</p><p class="mono text-xs mt-1" style="color:var(--muted)">portfolio projects shipped</p></div>
+      <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--teal)">2</p><p class="mono text-xs mt-1" style="color:var(--muted)">degrees in English Literature</p></div>
+      <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--gold)">TN</p><p class="mono text-xs mt-1" style="color:var(--muted)">based in Tamil Nadu, India</p></div>
     </div>
   </div>
 </section>
 
-<!-- Education -->
-<section id="education" class="fade-section">
-<div class="container">
-<h2 class="section-title">Education</h2>
+<section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
+  <p class="mono text-sm mb-3" style="color:var(--teal)">// skills</p>
+  <h2 class="display text-3xl font-semibold mb-10">Tools &amp; technologies I work with.</h2>
 
-<div class="row g-4">
-
-<!-- MA -->
-<div class="col-md-6">
-<div class="glass">
-<h5 class="fw-bold">Master of Arts in English Literature</h5>
-<p class="mb-1">Government Arts College for Women, Pudukkottai</p>
-<p class="text-white mb-1">2022 – 2024</p>
-<p>Percentage: 73%</p>
-<h6>Final Year Research Project — Feminist Literary Analysis
-
-Conducted an in-depth feminist reading of "The Palace of Illusions" 
-by Chitra Banerjee Divakaruni, analysing the character of Draupadi 
-(Panchali) — a woman navigating identity, agency, and voice within 
-a patriarchal ancient society.
-
-Applied feminist literary theory to examine how the novel reimagines 
-a female perspective within the Mahabharata narrative.</h6>
-</div>
-</div>
-
-<!-- BA -->
-<div class="col-md-6">
-<div class="glass">
-<h5 class="fw-bold">Bachelor of Arts in English Literature</h5>
-<p class="mb-1">J.J College of Arts & Science</p>
-<p class="text-white mb-1">2019 – 2022</p>
-<p>Percentage: 72%</p>
-</div>
-</div>
-
-<!-- Full Stack Course -->
-<div class="col-md-6">
-<div class="glass">
-<h5 class="fw-bold">Python Full Stack Development</h5>
-<p class="text-white mb-1">2025</p>
-<p>Technologies: HTML, CSS, JavaScript, Django, MySQL</p>
-</div>
-</div>
-
-<!-- DCA -->
-<div class="col-md-6">
-<div class="glass">
-<h5 class="fw-bold">Diploma in Computer Applications (DCA)</h5>
-<p class="text-white mb-1">2024</p>
-</div>
-</div>
-
-</div>
-</div>
+  <div class="space-y-8">
+    <div>
+      <p class="mono text-xs uppercase tracking-wide mb-3" style="color:var(--muted)">Languages</p>
+      <div class="flex flex-wrap gap-3">
+        <span class="chip"><i class="fab fa-python mr-1.5" style="color:var(--teal)"></i>Python</span>
+        <span class="chip"><i class="fab fa-js mr-1.5" style="color:var(--gold)"></i>JavaScript</span>
+        <span class="chip"><i class="fas fa-table mr-1.5" style="color:var(--teal)"></i>SQL</span>
+      </div>
+    </div>
+    <div>
+      <p class="mono text-xs uppercase tracking-wide mb-3" style="color:var(--muted)">Backend</p>
+      <div class="flex flex-wrap gap-3">
+        <span class="chip"><i class="fas fa-server mr-1.5" style="color:var(--teal)"></i>Django</span>
+        <span class="chip"><i class="fas fa-plug mr-1.5" style="color:var(--gold)"></i>Django REST Framework</span>
+        <span class="chip"><i class="fas fa-network-wired mr-1.5" style="color:var(--teal)"></i>REST APIs</span>
+        <span class="chip"><i class="fas fa-diagram-project mr-1.5" style="color:var(--gold)"></i>Django ORM</span>
+        <span class="chip"><i class="fas fa-key mr-1.5" style="color:var(--teal)"></i>JWT Auth</span>
+        <span class="chip"><i class="fas fa-arrows-rotate mr-1.5" style="color:var(--gold)"></i>CRUD Operations</span>
+      </div>
+    </div>
+    <div>
+      <p class="mono text-xs uppercase tracking-wide mb-3" style="color:var(--muted)">Frontend</p>
+      <div class="flex flex-wrap gap-3">
+        <span class="chip"><i class="fab fa-react mr-1.5" style="color:var(--teal)"></i>React.js</span>
+        <span class="chip"><i class="fas fa-bolt mr-1.5" style="color:var(--gold)"></i>Vite</span>
+        <span class="chip"><i class="fab fa-html5 mr-1.5" style="color:var(--teal)"></i>HTML5</span>
+        <span class="chip"><i class="fab fa-css3-alt mr-1.5" style="color:var(--gold)"></i>CSS3</span>
+        <span class="chip"><i class="fab fa-bootstrap mr-1.5" style="color:var(--teal)"></i>Bootstrap</span>
+        <span class="chip"><i class="fas fa-wind mr-1.5" style="color:var(--gold)"></i>Tailwind CSS</span>
+      </div>
+    </div>
+    <div>
+      <p class="mono text-xs uppercase tracking-wide mb-3" style="color:var(--muted)">Databases &amp; Tools</p>
+      <div class="flex flex-wrap gap-3">
+        <span class="chip"><i class="fas fa-database mr-1.5" style="color:var(--teal)"></i>PostgreSQL</span>
+        <span class="chip"><i class="fas fa-database mr-1.5" style="color:var(--gold)"></i>MySQL</span>
+        <span class="chip"><i class="fab fa-git-alt mr-1.5" style="color:var(--teal)"></i>Git</span>
+        <span class="chip"><i class="fab fa-github mr-1.5" style="color:var(--gold)"></i>GitHub</span>
+        <span class="chip"><i class="fas fa-paper-plane mr-1.5" style="color:var(--teal)"></i>Postman</span>
+        <span class="chip"><i class="fas fa-code mr-1.5" style="color:var(--gold)"></i>VS Code</span>
+      </div>
+    </div>
+  </div>
 </section>
 
+<section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
+  <p class="mono text-sm mb-3" style="color:var(--teal)">// projects</p>
+  <h2 class="display text-3xl font-semibold mb-10">Things I've built.</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-<section id="experience" class="fade-section">
-<div class="container">
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <rect x="150" y="45" width="16" height="55" fill="#161F33" stroke="#2FBFA8"/>
+        <rect x="130" y="65" width="56" height="16" fill="#161F33" stroke="#2FBFA8"/>
+        <path d="M158 55v40M138 75h40" stroke="#E8B04B" stroke-width="4"/>
+        <rect x="220" y="60" width="120" height="90" rx="8" fill="#161F33" stroke="#E8B04B"/>
+        <rect x="234" y="74" width="45" height="7" rx="3" fill="#8B93A7"/>
+        <rect x="234" y="90" width="92" height="7" rx="3" fill="#8B93A7"/>
+        <rect x="234" y="106" width="70" height="7" rx="3" fill="#8B93A7"/>
+        <circle cx="245" cy="130" r="6" fill="#2FBFA8"/><rect x="258" y="127" width="60" height="7" rx="3" fill="#8B93A7"/>
+      </svg>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="display text-lg font-semibold">Hospital Management System</h3>
+          <a href="https://github.com/Jaimitha13/HospitalManagementSystem" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Full stack system to manage patients, doctors, and appointments, with a Django REST Framework API consumed by a React dashboard over Axios and secured with JWT.</p>
+        <div class="flex flex-wrap gap-2"><span class="chip">React.js</span><span class="chip">Django REST Framework</span><span class="chip">PostgreSQL</span><span class="chip">JWT</span><span class="chip">Axios</span><span class="chip">Tailwind CSS</span></div>
+      </div>
+    </div>
 
-<h2 class="section-title">Experience</h2>
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <rect x="130" y="50" width="140" height="100" rx="10" fill="#161F33" stroke="#2FBFA8"/>
+        <text x="200" y="80" font-family="Space Grotesk, sans-serif" font-size="20" fill="#E8B04B" text-anchor="middle">₹</text>
+        <rect x="145" y="95" width="60" height="30" rx="4" fill="#0F1B2E" stroke="#2FBFA8"/>
+        <rect x="215" y="95" width="40" height="30" rx="4" fill="#0F1B2E" stroke="#E8B04B"/>
+        <rect x="145" y="132" width="110" height="7" rx="3" fill="#8B93A7"/>
+      </svg>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="display text-lg font-semibold">Smart Expense Tracker API</h3>
+          <a href="https://github.com/Jaimitha13/SmartExpenseTrackerAPI" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">REST APIs to add, view, filter, and delete expenses, with category-based tracking and total/category-wise calculations via Django ORM.</p>
+        <div class="flex flex-wrap gap-2"><span class="chip">Python</span><span class="chip">Django REST Framework</span><span class="chip">MySQL</span></div>
+      </div>
+    </div>
 
-<p class="section-subtitle text-center mb-5">
-Hands-on industry experience building secure and scalable web applications using Django and modern frontend technologies, with practical exposure to authentication systems, database management, and responsive UI development.
-</p>
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <circle cx="130" cy="90" r="46" fill="#2FBFA8" fill-opacity=".18"/>
+        <rect x="90" y="60" width="130" height="60" rx="16" fill="#161F33" stroke="#2FBFA8"/>
+        <circle cx="115" cy="90" r="5" fill="#2FBFA8"/><circle cx="140" cy="90" r="5" fill="#2FBFA8"/><circle cx="165" cy="90" r="5" fill="#2FBFA8"/>
+        <rect x="200" y="100" width="110" height="55" rx="16" fill="#161F33" stroke="#E8B04B"/>
+        <circle cx="225" cy="127" r="5" fill="#E8B04B"/><circle cx="250" cy="127" r="5" fill="#E8B04B"/>
+      </svg>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="display text-lg font-semibold">Real-Time Chat App</h3>
+          <a href="https://github.com/Jaimitha13/Chat-Application-project" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Live messaging built with Django Channels and Redis as the broker, with authenticated users and WebSocket broadcasting.</p>
+        <div class="flex flex-wrap gap-2"><span class="chip">Django</span><span class="chip">Channels</span><span class="chip">Redis</span><span class="chip">WebSockets</span></div>
+      </div>
+    </div>
 
-<div class="glass p-4">
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <rect x="130" y="45" width="140" height="110" rx="10" fill="#161F33" stroke="#E8B04B"/>
+        <rect x="148" y="65" width="16" height="16" rx="4" fill="none" stroke="#2FBFA8"/><path d="M151 73l3 3 6-6" stroke="#2FBFA8" stroke-width="2" fill="none"/>
+        <rect x="172" y="68" width="80" height="8" rx="3" fill="#8B93A7"/>
+        <rect x="148" y="95" width="16" height="16" rx="4" fill="none" stroke="#2FBFA8"/><path d="M151 103l3 3 6-6" stroke="#2FBFA8" stroke-width="2" fill="none"/>
+        <rect x="172" y="98" width="60" height="8" rx="3" fill="#8B93A7"/>
+        <rect x="148" y="125" width="16" height="16" rx="4" fill="none" stroke="#E8B04B"/>
+        <rect x="172" y="128" width="70" height="8" rx="3" fill="#8B93A7"/>
+      </svg>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="display text-lg font-semibold">Task Manager API</h3>
+          <a href="https://github.com/Jaimitha13/Todolist" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">CRUD task management with JWT authentication and a database-backed API, being expanded into a full stack app.</p>
+        <div class="flex flex-wrap gap-2"><span class="chip">Django</span><span class="chip">DRF</span><span class="chip">JWT</span><span class="chip">SQL</span></div>
+      </div>
+    </div>
 
-<h5 class="mb-1">
-<i class="fas fa-briefcase me-2"></i>
-Python Backend Developer
-</h5>
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <circle cx="200" cy="100" r="55" fill="#161F33" stroke="#2FBFA8"/>
+        <path d="M175 85 Q200 65 225 85" stroke="#E8B04B" stroke-width="3" fill="none"/>
+        <ellipse cx="200" cy="105" rx="40" ry="22" fill="#0F1B2E" stroke="#2FBFA8"/>
+        <circle cx="185" cy="100" r="3" fill="#E8B04B"/><circle cx="200" cy="98" r="3" fill="#E8B04B"/><circle cx="215" cy="102" r="3" fill="#E8B04B"/>
+      </svg>
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2">
+          <h3 class="display text-lg font-semibold">RecipeHub</h3>
+          <a href="https://github.com/Jaimitha13/recipe-finder-react" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+        </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">React recipe finder fetching data from the Spoonacular API, with client-side state management and protected keys.</p>
+        <div class="flex flex-wrap gap-2"><span class="chip">React.js</span><span class="chip">REST API</span><span class="chip">Spoonacular</span></div>
+      </div>
+    </div>
 
-<p class="text-white mb-2">
-<strong>Lagran Software Solutions</strong> | Nov 2025 – May 2026
-</p>
-
-<ul>
-<li>Developed and maintained backend logic for e-commerce web applications using Django and Python.</li>
-
-<li>Built and configured custom Django Admin panels to manage products, orders, users, and site content efficiently.</li>
-
-<li>Designed and managed relational databases including schema creation, querying, and data management using Django
-ORM.</li>
-
-<li>Converted Figma UI designs into pixel-perfect, responsive HTML/CSS/Bootstrap frontend templates</li>
-
-<li>Integrated dynamic content throughout the application by connecting frontend templates to Django views and models.</li>
-
-<li>Made all website content fully dynamic using Django template engine, eliminating hardcoded data across pages.</li>
-
-<li>Implemented JavaScript for interactive frontend features including form validation and dynamic UI elements.</li>
-
-<li>Collaborated with the design team to ensure accurate translation of visual mockups into functional web pages</li>
-
-<li>Maintained clean, version-controlled codebase using Git and GitHub across the full development cycle.</li>
-</ul>
-
-</div>
-</div>
-</section>
-<!-- Skills -->
-<section id="skills" class="fade-section">
-<div class="container">
-
-<h2 class="section-title">Skills</h2>
-
-<!-- Technical Skills -->
-<h4 class="mt-4 mb-3 text-center">Technical Skills</h4>
-<div class="row g-4 mb-5">
-<div class="col-md-3"><div class="glass">Python, Django</div></div>
-<div class="col-md-3"><div class="glass">HTML, CSS, Bootstrap, JavaScript, React JS</div></div>
-<div class="col-md-3"><div class="glass">MySQL, PostgreSQL</div></div>
-<div class="col-md-3"><div class="glass">Git, GitHub, Deployment</div></div>
-</div>
-
-<!-- Soft Skills -->
-<h4 class="mb-3 text-center">Soft Skills</h4>
-<div class="row g-4">
-<div class="col-md-3"><div class="glass">Problem-Solving</div></div>
-<div class="col-md-3"><div class="glass">Adaptability & Quick Learning</div></div>
-<div class="col-md-3"><div class="glass">Team Collaboration</div></div>
-<div class="col-md-3"><div class="glass">Communication Skills</div></div>
-</div>
-
-</div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="fade-section">
-<div class="container">
-
-<h2 class="section-title">Projects</h2>
-
-<div class="row g-4">
-
-<!-- Chat Application -->
-<div class="col-md-4">
-<div class="glass p-4 h-100">
-<h5 class="mb-3">Real-Time Chat Application</h5>
-<p>
-Built a real-time messaging platform with live communication using WebSockets and Django Channels.
-Implemented user authentication and message broadcasting with Redis as the message broker.
-</p>
-<p class="tech-stack">
-<strong>Tech Stack:</strong> HTML, CSS, Bootstrap, JavaScript, Python, Django, Channels, Redis, WebSockets, PostgreSQL
-</p>
-</div>
-</div>
-
-<!-- Todo List -->
-<div class="col-md-4">
-<div class="glass p-4 h-100">
-<h5 class="mb-3">Task Management System</h5>
-<p>
-Developed a CRUD-based task management application with secure backend handling and database integration.
-Designed clean UI with responsive layout for efficient task tracking.
-</p>
-<p class="tech-stack">
-<strong>Tech Stack:</strong> HTML, CSS, Django, SQL
-</p>
-</div>
-</div>
-
-<!-- Portfolio -->
-<div class="col-md-4">
-<div class="glass p-4 h-100">
-<h5 class="mb-3">👨‍🍳 RecipeHub</h5>
-<p>
-<li>Developed a recipe search application using React.js.</li> 
-
- <li>Integrated the Spoonacular REST API to fetch recipe and ingredient information.</li>
-
-<li>Implemented recipe search, recipe details, ingredients, and cooking instructions.</li>
-<li>
-Used React components, state management, and useEffect for dynamic data handling.</li>
-
-<li>Protected the API key using environment variables.</li>
-
-</p>
-<p class="tech-stack">
-<strong>Tech Stack:</strong> React.js | JavaScript | REST API | Spoonacular API | CSS
-</p>
-</div>
-</div>
-
-</div>
-</div>
+  </div>
 </section>
 
-<section id="contact" class="fade-section">
-<div class="container">
-
-<h2 class="section-title">Contact</h2>
-
-<div class="row g-4 align-items-stretch">
-
-<!-- LEFT SIDE - Location -->
-<div class="col-md-5">
-<div class="glass p-4 h-100">
-
-<h5 class="mb-4">Location</h5>
-
-<div class="mb-3">
-<i class="fas fa-map-marker-alt me-2 text-info"></i>
-<span>Pudukkottai, Tamil Nadu, India</span>
-</div>
-
-<p class="mt-3 mb-0">
-Available for remote, hybrid, and on-site opportunities.
-</p>
-
-</div>
-</div>
-
-<!-- RIGHT SIDE - Let's Connect -->
-<div class="col-md-7">
-<div class="glass p-4 h-100">
-
-<h5 class="mb-4">Let's Connect</h5>
-
-<p class="mb-4">
-Open to Full Stack Developer roles, full-time opportunities, and collaborative projects.
-</p>
-
-<div class="d-flex flex-wrap gap-3">
-
-<a href="mailto:lkjaimitha@gmail.com" class="btn btn-outline-info">
-<i class="fas fa-envelope me-2"></i>Email
-</a>
-
-<a href="https://wa.me/916374115168" target="_blank" class="btn btn-outline-light">
-<i class="fab fa-whatsapp me-2"></i>Message
-</a>
-
-<a href="https://github.com/Jaimitha13" target="_blank" class="btn btn-outline-light">
-<i class="fab fa-github me-2"></i>GitHub
-</a>
-
-<a href="https://www.linkedin.com/in/jaimitha-lk2001" target="_blank" class="btn btn-outline-info">
-<i class="fab fa-linkedin me-2"></i>LinkedIn
-</a>
-
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
+<section id="experience" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
+  <p class="mono text-sm mb-3" style="color:var(--teal)">// experience</p>
+  <h2 class="display text-3xl font-semibold mb-10">Where I've worked.</h2>
+  <div class="card p-8">
+    <div class="flex flex-wrap items-baseline justify-between gap-x-4 mb-1">
+      <h3 class="display text-xl font-semibold">Python Backend Developer</h3>
+      <span class="mono text-xs" style="color:var(--muted)">Nov 2025 – May 2026</span>
+    </div>
+    <p class="mb-5 text-sm" style="color:var(--gold)">Lagran Software Solutions</p>
+    <ul class="space-y-2.5 text-sm leading-relaxed list-disc pl-5 marker:text-[var(--teal)]" style="color:var(--muted)">
+      <li>Developed and maintained backend logic for e-commerce applications using Django and Python.</li>
+      <li>Built custom Django Admin panels to manage products, orders, users, and content.</li>
+      <li>Designed relational schemas and managed data with the Django ORM.</li>
+      <li>Converted Figma designs into responsive HTML/CSS/Bootstrap templates and wired them to Django views.</li>
+      <li>Replaced hardcoded content with the Django template engine across the site.</li>
+      <li>Added JavaScript for form validation and dynamic UI behaviour, using Git throughout.</li>
+    </ul>
+  </div>
 </section>
 
-<footer class="minimal-footer">
-  © 2026 <strong>Jaimitha LK</strong>. From literature to logic — building modern web experiences.
+<section id="education" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
+  <p class="mono text-sm mb-3" style="color:var(--teal)">// education</p>
+  <h2 class="display text-3xl font-semibold mb-10">How I got here.</h2>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="card p-6">
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 mb-1"><h3 class="font-semibold">M.A. English Literature</h3><span class="mono text-xs" style="color:var(--muted)">2022–24</span></div>
+      <p class="text-sm" style="color:var(--muted)">Government Arts College for Women, Pudukkottai · 73%</p>
+    </div>
+    <div class="card p-6">
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 mb-1"><h3 class="font-semibold">B.A. English Literature</h3><span class="mono text-xs" style="color:var(--muted)">2019–22</span></div>
+      <p class="text-sm" style="color:var(--muted)">J.J. College of Arts &amp; Science · 72%</p>
+    </div>
+    <div class="card p-6">
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 mb-1"><h3 class="font-semibold">Python Full Stack Development</h3><span class="mono text-xs" style="color:var(--muted)">2025</span></div>
+      <p class="text-sm" style="color:var(--muted)">HTML, CSS, JavaScript, Django, MySQL</p>
+    </div>
+    <div class="card p-6">
+      <div class="flex flex-wrap items-baseline justify-between gap-x-4 mb-1"><h3 class="font-semibold">Diploma in Computer Applications</h3><span class="mono text-xs" style="color:var(--muted)">2024</span></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
+  <p class="mono text-sm mb-3" style="color:var(--teal)">// contact</p>
+  <div class="card p-8 md:p-10">
+    <h2 class="display text-2xl md:text-3xl font-semibold mb-6 max-w-lg">Open to full stack and backend developer roles — remote, hybrid, or on-site.</h2>
+    <div class="flex flex-wrap gap-4">
+      <a href="mailto:lkjaimitha@gmail.com" class="btn btn-fill"><i class="fas fa-envelope"></i>lkjaimitha@gmail.com</a>
+      <a href="https://github.com/Jaimitha13" target="_blank" class="btn btn-line"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://www.linkedin.com/in/jaimitha-lk2001" target="_blank" class="btn btn-line"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://wa.me/916374115168" target="_blank" class="btn btn-line"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+    </div>
+    <p class="mt-8 text-sm" style="color:var(--muted)">© 2026 Jaimitha LK · Pudukkottai, Tamil Nadu, India</p>
+  </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="index.js"></script>
-
 
 </body>
 </html>
