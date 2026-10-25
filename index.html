@@ -78,7 +78,7 @@
     </div>
     <div class="grid grid-cols-2 gap-4">
       <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--teal)">6–7</p><p class="mono text-xs mt-1" style="color:var(--muted)">months, backend internship</p></div>
-      <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--gold)">5</p><p class="mono text-xs mt-1" style="color:var(--muted)">portfolio projects shipped</p></div>
+      <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--gold)">6</p><p class="mono text-xs mt-1" style="color:var(--muted)">portfolio projects Highlights</p></div>
       <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--teal)">2</p><p class="mono text-xs mt-1" style="color:var(--muted)">degrees in English Literature</p></div>
       <div class="card p-5"><p class="display text-3xl font-semibold" style="color:var(--gold)">TN</p><p class="mono text-xs mt-1" style="color:var(--muted)">based in Tamil Nadu, India</p></div>
     </div>
@@ -134,11 +134,51 @@
   </div>
 </section>
 
+```html
 <section id="projects" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
   <p class="mono text-sm mb-3" style="color:var(--teal)">// projects</p>
   <h2 class="display text-3xl font-semibold mb-10">Things I've built.</h2>
+
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
+    <!-- 1. The Daily Read -->
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <rect x="105" y="30" width="190" height="140" rx="8" fill="#161F33" stroke="#2FBFA8" stroke-width="2"/>
+        <rect x="120" y="45" width="160" height="28" rx="4" fill="#2FBFA8" fill-opacity=".18"/>
+        <text x="200" y="63" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2FBFA8" text-anchor="middle">THE DAILY READ</text>
+        <rect x="125" y="86" width="150" height="5" rx="2" fill="#E8B04B"/>
+        <rect x="125" y="101" width="135" height="5" rx="2" fill="#8B93A7"/>
+        <rect x="125" y="113" width="145" height="5" rx="2" fill="#8B93A7"/>
+        <rect x="125" y="125" width="115" height="5" rx="2" fill="#8B93A7"/>
+        <rect x="125" y="143" width="55" height="14" rx="4" fill="#2FBFA8"/>
+        <path d="M315 55 l12 -12 l12 12 l-12 12 Z" fill="#E8B04B"/>
+      </svg>
+
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2 gap-3">
+          <h3 class="display text-lg font-semibold">The Daily Read</h3>
+          <a href="https://github.com/Jaimitha13" target="_blank" rel="noopener noreferrer" class="mono text-xs shrink-0" style="color:var(--teal)">
+            <i class="fab fa-github mr-1"></i>Code
+          </a>
+        </div>
+
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">
+          A responsive blog application built with Next.js, featuring separate pages for articles, categories, and about information, with reusable components and organized navigation.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">Next.js</span>
+          <span class="chip">React</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Hospital Management System -->
     <div class="card overflow-hidden">
       <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
         <rect width="400" height="200" fill="#0F1B2E"/>
@@ -149,18 +189,67 @@
         <rect x="234" y="74" width="45" height="7" rx="3" fill="#8B93A7"/>
         <rect x="234" y="90" width="92" height="7" rx="3" fill="#8B93A7"/>
         <rect x="234" y="106" width="70" height="7" rx="3" fill="#8B93A7"/>
-        <circle cx="245" cy="130" r="6" fill="#2FBFA8"/><rect x="258" y="127" width="60" height="7" rx="3" fill="#8B93A7"/>
+        <circle cx="245" cy="130" r="6" fill="#2FBFA8"/>
+        <rect x="258" y="127" width="60" height="7" rx="3" fill="#8B93A7"/>
       </svg>
+
       <div class="p-6">
-        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center justify-between mb-2 gap-3">
           <h3 class="display text-lg font-semibold">Hospital Management System</h3>
-          <a href="https://github.com/Jaimitha13/HospitalManagementSystem" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+          <a href="https://github.com/Jaimitha13/HospitalManagementSystem" target="_blank" rel="noopener noreferrer" class="mono text-xs shrink-0" style="color:var(--teal)">
+            <i class="fab fa-github mr-1"></i>Code
+          </a>
         </div>
-        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Full stack system to manage patients, doctors, and appointments, with a Django REST Framework API consumed by a React dashboard over Axios and secured with JWT.</p>
-        <div class="flex flex-wrap gap-2"><span class="chip">React.js</span><span class="chip">Django REST Framework</span><span class="chip">PostgreSQL</span><span class="chip">JWT</span><span class="chip">Axios</span><span class="chip">Tailwind CSS</span></div>
+
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">
+          A full-stack system for managing patients, doctors, and appointments, with a Django REST Framework API consumed by a React dashboard and secured using JWT authentication.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">React.js</span>
+          <span class="chip">Django REST Framework</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">JWT</span>
+          <span class="chip">Axios</span>
+          <span class="chip">Tailwind CSS</span>
+        </div>
       </div>
     </div>
 
+    <!-- 3. RecipeHub -->
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <circle cx="200" cy="100" r="55" fill="#161F33" stroke="#2FBFA8"/>
+        <path d="M175 85 Q200 65 225 85" stroke="#E8B04B" stroke-width="3" fill="none"/>
+        <ellipse cx="200" cy="105" rx="40" ry="22" fill="#0F1B2E" stroke="#2FBFA8"/>
+        <circle cx="185" cy="100" r="3" fill="#E8B04B"/>
+        <circle cx="200" cy="98" r="3" fill="#E8B04B"/>
+        <circle cx="215" cy="102" r="3" fill="#E8B04B"/>
+      </svg>
+
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2 gap-3">
+          <h3 class="display text-lg font-semibold">RecipeHub</h3>
+          <a href="https://github.com/Jaimitha13/recipe-finder-react" target="_blank" rel="noopener noreferrer" class="mono text-xs shrink-0" style="color:var(--teal)">
+            <i class="fab fa-github mr-1"></i>Code
+          </a>
+        </div>
+
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">
+          A React-based recipe finder that retrieves recipe information from the Spoonacular API, helping users discover recipes through API integration and client-side state management.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">React.js</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">REST API</span>
+          <span class="chip">Spoonacular</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Smart Expense Tracker API -->
     <div class="card overflow-hidden">
       <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
         <rect width="400" height="200" fill="#0F1B2E"/>
@@ -170,76 +259,101 @@
         <rect x="215" y="95" width="40" height="30" rx="4" fill="#0F1B2E" stroke="#E8B04B"/>
         <rect x="145" y="132" width="110" height="7" rx="3" fill="#8B93A7"/>
       </svg>
+
       <div class="p-6">
-        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center justify-between mb-2 gap-3">
           <h3 class="display text-lg font-semibold">Smart Expense Tracker API</h3>
-          <a href="https://github.com/Jaimitha13/SmartExpenseTrackerAPI" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+          <a href="https://github.com/Jaimitha13/SmartExpenseTrackerAPI" target="_blank" rel="noopener noreferrer" class="mono text-xs shrink-0" style="color:var(--teal)">
+            <i class="fab fa-github mr-1"></i>Code
+          </a>
         </div>
-        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">REST APIs to add, view, filter, and delete expenses, with category-based tracking and total/category-wise calculations via Django ORM.</p>
-        <div class="flex flex-wrap gap-2"><span class="chip">Python</span><span class="chip">Django REST Framework</span><span class="chip">MySQL</span></div>
+
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">
+          REST APIs for adding, viewing, filtering, and deleting expenses, with category-based tracking and total and category-wise expense calculations using Django ORM.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">Python</span>
+          <span class="chip">Django REST Framework</span>
+          <span class="chip">MySQL</span>
+        </div>
       </div>
     </div>
 
+    <!-- 5. Task Manager API -->
+    <div class="card overflow-hidden">
+      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="200" fill="#0F1B2E"/>
+        <rect x="130" y="45" width="140" height="110" rx="10" fill="#161F33" stroke="#E8B04B"/>
+        <rect x="148" y="65" width="16" height="16" rx="4" fill="none" stroke="#2FBFA8"/>
+        <path d="M151 73l3 3 6-6" stroke="#2FBFA8" stroke-width="2" fill="none"/>
+        <rect x="172" y="68" width="80" height="8" rx="3" fill="#8B93A7"/>
+        <rect x="148" y="95" width="16" height="16" rx="4" fill="none" stroke="#2FBFA8"/>
+        <path d="M151 103l3 3 6-6" stroke="#2FBFA8" stroke-width="2" fill="none"/>
+        <rect x="172" y="98" width="60" height="8" rx="3" fill="#8B93A7"/>
+        <rect x="148" y="125" width="16" height="16" rx="4" fill="none" stroke="#E8B04B"/>
+        <rect x="172" y="128" width="70" height="8" rx="3" fill="#8B93A7"/>
+      </svg>
+
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-2 gap-3">
+          <h3 class="display text-lg font-semibold">Task Manager API</h3>
+          <a href="https://github.com/Jaimitha13/Todolist" target="_blank" rel="noopener noreferrer" class="mono text-xs shrink-0" style="color:var(--teal)">
+            <i class="fab fa-github mr-1"></i>Code
+          </a>
+        </div>
+
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">
+          A task management API supporting CRUD operations and JWT authentication, with database-backed task storage and plans for full-stack integration.
+        </p>
+
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">Django</span>
+          <span class="chip">Django REST Framework</span>
+          <span class="chip">JWT</span>
+          <span class="chip">SQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Real-Time Chat App -->
     <div class="card overflow-hidden">
       <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
         <rect width="400" height="200" fill="#0F1B2E"/>
         <circle cx="130" cy="90" r="46" fill="#2FBFA8" fill-opacity=".18"/>
         <rect x="90" y="60" width="130" height="60" rx="16" fill="#161F33" stroke="#2FBFA8"/>
-        <circle cx="115" cy="90" r="5" fill="#2FBFA8"/><circle cx="140" cy="90" r="5" fill="#2FBFA8"/><circle cx="165" cy="90" r="5" fill="#2FBFA8"/>
+        <circle cx="115" cy="90" r="5" fill="#2FBFA8"/>
+        <circle cx="140" cy="90" r="5" fill="#2FBFA8"/>
+        <circle cx="165" cy="90" r="5" fill="#2FBFA8"/>
         <rect x="200" y="100" width="110" height="55" rx="16" fill="#161F33" stroke="#E8B04B"/>
-        <circle cx="225" cy="127" r="5" fill="#E8B04B"/><circle cx="250" cy="127" r="5" fill="#E8B04B"/>
+        <circle cx="225" cy="127" r="5" fill="#E8B04B"/>
+        <circle cx="250" cy="127" r="5" fill="#E8B04B"/>
       </svg>
+
       <div class="p-6">
-        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center justify-between mb-2 gap-3">
           <h3 class="display text-lg font-semibold">Real-Time Chat App</h3>
-          <a href="https://github.com/Jaimitha13/Chat-Application-project" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+          <a href="https://github.com/Jaimitha13/Chat-Application-project" target="_blank" rel="noopener noreferrer" class="mono text-xs shrink-0" style="color:var(--teal)">
+            <i class="fab fa-github mr-1"></i>Code
+          </a>
         </div>
-        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">Live messaging built with Django Channels and Redis as the broker, with authenticated users and WebSocket broadcasting.</p>
-        <div class="flex flex-wrap gap-2"><span class="chip">Django</span><span class="chip">Channels</span><span class="chip">Redis</span><span class="chip">WebSockets</span></div>
-      </div>
-    </div>
 
-    <div class="card overflow-hidden">
-      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
-        <rect width="400" height="200" fill="#0F1B2E"/>
-        <rect x="130" y="45" width="140" height="110" rx="10" fill="#161F33" stroke="#E8B04B"/>
-        <rect x="148" y="65" width="16" height="16" rx="4" fill="none" stroke="#2FBFA8"/><path d="M151 73l3 3 6-6" stroke="#2FBFA8" stroke-width="2" fill="none"/>
-        <rect x="172" y="68" width="80" height="8" rx="3" fill="#8B93A7"/>
-        <rect x="148" y="95" width="16" height="16" rx="4" fill="none" stroke="#2FBFA8"/><path d="M151 103l3 3 6-6" stroke="#2FBFA8" stroke-width="2" fill="none"/>
-        <rect x="172" y="98" width="60" height="8" rx="3" fill="#8B93A7"/>
-        <rect x="148" y="125" width="16" height="16" rx="4" fill="none" stroke="#E8B04B"/>
-        <rect x="172" y="128" width="70" height="8" rx="3" fill="#8B93A7"/>
-      </svg>
-      <div class="p-6">
-        <div class="flex items-center justify-between mb-2">
-          <h3 class="display text-lg font-semibold">Task Manager API</h3>
-          <a href="https://github.com/Jaimitha13/Todolist" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
-        </div>
-        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">CRUD task management with JWT authentication and a database-backed API, being expanded into a full stack app.</p>
-        <div class="flex flex-wrap gap-2"><span class="chip">Django</span><span class="chip">DRF</span><span class="chip">JWT</span><span class="chip">SQL</span></div>
-      </div>
-    </div>
+        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">
+          A real-time messaging application using Django Channels and Redis, with authenticated users and WebSocket-based message broadcasting.
+        </p>
 
-    <div class="card overflow-hidden">
-      <svg viewBox="0 0 400 200" class="w-full h-36" preserveAspectRatio="xMidYMid slice">
-        <rect width="400" height="200" fill="#0F1B2E"/>
-        <circle cx="200" cy="100" r="55" fill="#161F33" stroke="#2FBFA8"/>
-        <path d="M175 85 Q200 65 225 85" stroke="#E8B04B" stroke-width="3" fill="none"/>
-        <ellipse cx="200" cy="105" rx="40" ry="22" fill="#0F1B2E" stroke="#2FBFA8"/>
-        <circle cx="185" cy="100" r="3" fill="#E8B04B"/><circle cx="200" cy="98" r="3" fill="#E8B04B"/><circle cx="215" cy="102" r="3" fill="#E8B04B"/>
-      </svg>
-      <div class="p-6">
-        <div class="flex items-center justify-between mb-2">
-          <h3 class="display text-lg font-semibold">RecipeHub</h3>
-          <a href="https://github.com/Jaimitha13/recipe-finder-react" target="_blank" class="mono text-xs" style="color:var(--teal)"><i class="fab fa-github mr-1"></i>Code</a>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">Django</span>
+          <span class="chip">Django Channels</span>
+          <span class="chip">Redis</span>
+          <span class="chip">WebSockets</span>
         </div>
-        <p class="text-sm leading-relaxed mb-4" style="color:var(--muted)">React recipe finder fetching data from the Spoonacular API, with client-side state management and protected keys.</p>
-        <div class="flex flex-wrap gap-2"><span class="chip">React.js</span><span class="chip">REST API</span><span class="chip">Spoonacular</span></div>
       </div>
     </div>
 
   </div>
 </section>
+```
 
 <section id="experience" class="max-w-6xl mx-auto px-6 py-20 border-t reveal" style="border-color:var(--line)">
   <p class="mono text-sm mb-3" style="color:var(--teal)">// experience</p>
